@@ -92,11 +92,44 @@ div {
 /* focus */
 
 .focus {
+    overflow: hidden;
+    position: relative;
     padding-top: 44px;
 }
 
 .focus img {
     width: 100%;
+}
+
+.focus ul {
+    width: 500%;
+    margin-left: -100%;
+}
+
+.focus ul li {
+    width: 20%;
+    float: left;
+}
+
+.focus ol {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+}
+
+.focus ol li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 2px;
+    transition: all .2s;
+}
+
+.focus ol li.current {
+    width: 15px;
 }
 
 
