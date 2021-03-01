@@ -88,4 +88,20 @@ window.addEventListener('load', function() {
         }, 2000)
     });
 
+
+    //goBack to Top function
+    var goBack = document.querySelector('.goBack');
+    var nav = document.querySelector('.main_nav');
+    // once window scroll to the bottom area, show the goback button, else hidde
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset >= nav.offsetTop) {
+            goBack.style.display = 'block';
+        } else {
+            goBack.style.display = 'none';
+        }
+    });
+    //click goback bottom to jump to the top area
+    goBack.addEventListener('click', function() {
+        window.scroll(0, 0);
+    })
 })

@@ -1,4 +1,5 @@
 body {
+    position: relative;
     max-width: 540px;
     min-width: 320px;
     margin: 0 auto;
@@ -7,7 +8,20 @@ body {
     background: #f2f2f2;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    height: 2000px;
+    height: 1400px;
+    ;
+}
+
+.goBack {
+    display: none;
+    position: absolute;
+    bottom: 340px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background: url(../images/back.png) no-repeat;
+    background-size: 38px, 38px;
+    z-index: 20;
 }
 
 ul {
@@ -43,6 +57,7 @@ div {
     background-color: #f6f6f6;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    z-index: 9999;
 }
 
 .search {

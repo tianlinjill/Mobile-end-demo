@@ -15,6 +15,12 @@ Only use for personal study and practice purpose.
 
 
 
+## Update on 1/03/2021:
+
+1. added go back to top function, once the screen slide to the bottom area, go back bottom would show up, and click to jump back top area. The go back button would hide when user stay in top area.
+
+
+
 ## Update on 28/02/2021:
 
 1.Use Time-Interval  method to scroll main page focus images automatically.
